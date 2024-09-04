@@ -6,6 +6,11 @@ void f() {
     }
 }
 
+template<typename T>
+struct S {
+    T x;
+};
+
 int main() {
     f();
     std :: cout << "\n";
