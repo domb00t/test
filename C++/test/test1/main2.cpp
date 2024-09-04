@@ -12,6 +12,10 @@ struct S {
     T x;
 };
 
+void h() {
+
+}
+
 int main() {
     f();
     std :: cout << "\n";
