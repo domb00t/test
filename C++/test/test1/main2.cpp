@@ -16,5 +16,6 @@ int main() {
     f();
     std :: cout << "\n";
     std :: cout << addition(3,4);
+    std :: cout << " ";
     return 0;
 }
