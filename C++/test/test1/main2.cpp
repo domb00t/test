@@ -8,5 +8,6 @@ void f() {
 
 int main() {
     f();
+    std :: cout << "\n";
     return 0;
 }
