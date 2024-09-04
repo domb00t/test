@@ -1,4 +1,5 @@
 #include <iostream>
+#include "func.h"
 
 void f() {
     for(int i =0;i < 10;++i) {
@@ -14,5 +15,6 @@ struct S {
 int main() {
     f();
     std :: cout << "\n";
+    std :: cout << addition(3,4);
     return 0;
 }
