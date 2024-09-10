@@ -1,6 +1,6 @@
 #include <iostream>
 
-// TODO: UB - heap-buffer-overflow
+// TODO: UB - heap-buffer-overflow (probably fixed)
 
 template <typename T>
 class vector
@@ -26,7 +26,7 @@ public:
     void push_back(T value)
     {
         T *_newarr = resrerve(sz + 1);
-        for (size_t index = 0; index < sz + 1; ++index)
+        for (size_t index = 0; index < sz; ++index)
         {
             new (_newarr + index) T(arr[index]);
         }
