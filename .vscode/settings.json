@@ -54,7 +54,8 @@
         "streambuf": "cpp",
         "thread": "cpp",
         "typeinfo": "cpp",
-        "cstring": "cpp"
+        "cstring": "cpp",
+        "stdbool.h": "c"
     },
     "cmake.ignoreCMakeListsMissing": true
 }
