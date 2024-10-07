@@ -3,9 +3,34 @@
 
 int main()
 {
-    for (size_t index = 0; index < 5; ++index)
+    int Col = 3;
+    int Row = 3;
+    int **X;
+    X = new int *[Row];
+    for (size_t i = 0; i < Row; ++i)
     {
-        std ::cout << 5 - index - 1 << std ::endl;
+        X[i] = new int[Col];
     }
-    std :: cout << static_cast<char>(48);
+
+    for (size_t i = 0; i < Row; ++i)
+    {
+        for (size_t j = 0; j < Col; ++j)
+        {
+            X[i][j] = j + Col * i + 1;
+        }
+    }
+
+    for (size_t i = 0; i < Row; ++i)
+    {
+        for (size_t j = 0; j < Col; ++j)
+        {
+            std ::cout << X[i][j] << '\t';
+        }
+    }
+
+    for (size_t i = 0; i < Row; ++i)
+    {
+        delete[] X[i];
+    }
+    delete[] X;
 }
